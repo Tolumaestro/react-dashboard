@@ -41,6 +41,8 @@ function App() {
             <Navbar />
           </div>
           <div>
+            <ThemeSettings />
+
             <Routes>
               {/* Dashbaord */}
               <Route path="/" element={<Ecommerce /> } />
@@ -55,7 +57,7 @@ function App() {
               <Route path="/kanban" element={<Kanban /> } />
               <Route path="/editor" element={<Editor /> } />
               <Route path="/calendar" element={<Calendar /> } />
-              <Route path="{<color /> }picker" element={<ColorPicker /> } />
+              <Route path="color-picker" element={<ColorPicker /> } />
 
               {/* Charts */}
               <Route path="/line" element={<Line /> } />

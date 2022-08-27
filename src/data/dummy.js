@@ -50,7 +50,8 @@ export const kanbanGrid = [
 
   { headerText: 'In Progress',
     keyField: 'InProgress',
-    allowToggle: true },
+    allowToggle: true, 
+    isExpanded: false },
 
   { headerText: 'Testing',
     keyField: 'Testing',
@@ -59,7 +60,8 @@ export const kanbanGrid = [
 
   { headerText: 'Done',
     keyField: 'Close',
-    allowToggle: true },
+    allowToggle: true,
+    isExpanded: false },
 ];
 const gridEmployeeProfile = (props) => (
   <div className="flex items-center gap-2">
