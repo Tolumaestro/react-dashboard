@@ -33,6 +33,9 @@ export const ContextProvider = ({ children }) => {
     }
 
     const handleClick = (clicked) => {
+        setTimeout(() => {
+            setIsClicked({...initialState})
+        }, 2000);
         setIsClicked({ ...initialState, [clicked]: true})
     }
     
